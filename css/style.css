@@ -13,7 +13,7 @@ ul {
   margin: 0;
 }
 .container {
-  max-width: 1110px;
+  max-width: 1210px;
   margin: auto;
 }
 .header {
@@ -35,7 +35,7 @@ ul {
 }
 .nav-phone {
   color: rgba(40, 39, 57, 1);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
 }
 .nav-link {
@@ -53,4 +53,111 @@ ul {
   width: 16px;
   height: 16px;
   display: inline-block;
+}
+.navigation {
+  padding: 30px 0 40px 0;
+}
+.navigation-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  color: rgba(40, 39, 57, 1);
+  font-size: 34px;
+  font-weight: 740;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  background-color: rgba(111, 115, 238, 1);
+  color: #fff;
+  padding: 14px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  gap: 14px;
+}
+.menu-line-wrapp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.menu-line {
+  width: 13px;
+  height: 1px;
+  background-color: #fff;
+  margin: 2px 0;
+}
+.menu-line:nth-child(3) {
+  width: 50%;
+}
+.menu-toggle-name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  margin: 0;
+}
+.search-form {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+}
+.search-input {
+  width: 100%;
+  padding: 12px 50px 12px 15px;
+  border: 2px solid rgba(111, 115, 238, 1);
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.search-input:focus {
+  border-color: #4a4fff;
+  box-shadow: 0 0 5px rgba(111, 115, 238, 1);
+}
+.search-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 50px;
+  background-color: rgba(111, 115, 238, 1);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+.search-button:hover {
+  background-color: #5b61f7;
+}
+.search-button .icon {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+.icon-nav {
+  width: 20px;
+  height: 20px;
+}
+.shop-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.icon-shop {
+  width: 30px;
+  height: 20px;
+}
+.shop-title {
+  color: rgba(40, 39, 57, 1);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
 }
