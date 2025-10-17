@@ -69,36 +69,83 @@ ul {
   line-height: 100%;
   text-transform: uppercase;
 }
-.menu-toggle {
-  display: flex;
-  align-items: center;
-  background-color: rgba(111, 115, 238, 1);
-  color: #fff;
-  padding: 14px 18px;
-  border-radius: 5px;
-  text-decoration: none;
-  cursor: pointer;
-  gap: 14px;
+.catalog-container {
+  position: relative;
+  display: inline-block;
 }
+
+/* Кнопка */
+.menu-toggle {
+  display: inline-flex;
+  align-items: center;
+  background-color: #6f73ee;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.menu-toggle:hover {
+  background-color: #5a54e6;
+}
+
+/* Иконка (три полоски) */
 .menu-line-wrapp {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: flex-end;
+  height: 12px;
+  margin-right: 10px;
 }
+
 .menu-line {
   width: 13px;
   height: 1px;
-  background-color: #fff;
-  margin: 2px 0;
+  background: #fff;
+  border-radius: 1px;
 }
 .menu-line:nth-child(3) {
-  width: 50%;
+  width: 70%;
 }
 .menu-toggle-name {
   font-size: 16px;
-  font-weight: 500;
-  line-height: 100%;
   margin: 0;
+}
+/* Выпадающее меню */
+.catalog-menu {
+  position: absolute;
+  top: 100%; /* прямо под кнопкой */
+  left: 0;
+  background: #6f73ee;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  min-width: 180px;
+  z-index: 99;
+  /* Скрыто по умолчанию */
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+.catalog-menu.show {
+  max-height: 400px;
+  opacity: 1;
+  transform: translateY(0);
+}
+.catalog-menu a {
+  display: block;
+  padding: 12px 16px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.catalog-menu a:hover {
+  background: #5a54e6;
 }
 .search-form {
   position: relative;
