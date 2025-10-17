@@ -209,7 +209,7 @@ ul {
   line-height: 100%;
 }
 .hero {
-  max-width: 1850px;
+  max-width: 1700px;
   margin: auto;
   position: relative;
   background-image: url("../img/bg-woman.png");
@@ -315,4 +315,216 @@ ul {
   letter-spacing: 0%;
   text-align: center;
   width: 160px;
+}
+.test {
+  position: relative;
+  padding: 70px;
+  margin-bottom: 70px;
+  min-height: 550px;
+}
+.test-image {
+  margin-top: 50px;
+  position: absolute;
+  right: 100px;
+  top: 0;
+  height: 90%;
+  object-fit: cover;
+}
+.test-descr {
+  max-width: 740px;
+}
+.test-title {
+  color: rgba(40, 39, 57, 1);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 2px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.text-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  color: rgba(40, 39, 57, 1);
+  font-size: 18px;
+  font-weight: 5400;
+}
+.test-subtitle {
+  margin-top: 0;
+  color: rgba(40, 39, 57, 1);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 82.35%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.safety {
+  position: relative;
+  min-height: 550px;
+}
+.safety-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.test-descr-2 {
+  max-width: 700px;
+  position: absolute;
+  right: 400px;
+}
+.cards {
+  padding: 50px 0;
+}
+.card-list {
+  display: flex;
+  justify-content: space-between;
+}
+.card-title {
+  color: rgba(40, 39, 57, 1);
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 732px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.card-name {
+  color: var(--Black, rgba(40, 39, 57, 1));
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 100%;
+}
+.card-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+}
+.card-badge.hit {
+  background-color: #ff4b4b;
+}
+.card-badge-icon {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
+.card-badge.new {
+  background: rgba(117, 209, 74, 1);
+}
+.card-item {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 250px;
+  min-height: 492px;
+}
+.card-wrapper {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.card-image-wrapper {
+  background: rgba(240, 241, 245, 1);
+  width: 255px;
+  height: 231px;
+  padding-top: 20px;
+}
+.card-image {
+  top: 20px;
+  width: 100%;
+}
+.card-info {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+.card-info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.cards-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-price {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.card-price-icon {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+.price-icon {
+  width: 20px;
+  height: 20px;
+}
+.price-icon {
+  width: 40px; /* размер иконки */
+  height: 40px;
+  padding: 8px; /* отступ внутри круга */
+  border: 1px solid #e0e0e0; /* цвет обводки */
+  border-radius: 50%; /* делает круг */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease; /* плавный эффект при наведении */
+}
+.price-icon:hover {
+  border-color: #007bff; /* меняется цвет обводки при наведении */
+}
+.old-price {
+  color: rgba(93, 108, 123, 1);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration-line: line-through;
+  margin-bottom: 10px;
+}
+.new-price {
+  color: rgba(40, 39, 57, 1);
+  font-family: Jost;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.card-btn {
+  margin-top: 1rem;
+  background: rgba(111, 115, 238, 1);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
 }
