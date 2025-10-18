@@ -700,9 +700,10 @@ ul {
   padding: 25px 16px;
   border: none;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.25);
-  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(111, 115, 238, 1);
   font-size: 14px;
+  outline: none;
 }
 .subscribe-form input::placeholder {
   color: #e0e0e0;
@@ -716,6 +717,10 @@ ul {
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
+  color: rgba(111, 115, 238, 1);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
 }
 .subscribe-form button:hover {
   background-color: #f0f0f0;
