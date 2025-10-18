@@ -528,3 +528,138 @@ ul {
   font-weight: 400;
   text-align: center;
 }
+.model {
+  position: relative;
+  max-width: 1700px;
+  margin: auto;
+}
+.model-bg {
+  position: relative;
+  background: rgba(244, 247, 251, 1);
+  min-height: 445px;
+  border-radius: 20px;
+}
+/* Текст */
+.model-title,
+.model-subtitle {
+  position: relative;
+  z-index: 2; /* чтобы текст был поверх фона */
+  color: #fff;
+}
+/* Картинка поверх фона */
+.model-image {
+  position: absolute;
+  top: -95px;
+  right: 200px;
+  width: 440px;
+  z-index: 3; /* выше фона и текста */
+}
+.model-content {
+  padding: 80px 0;
+}
+.model-title {
+  color: rgba(40, 39, 57, 1);
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: 2px;
+  text-align: left;
+  text-transform: uppercase;
+  max-width: 700px;
+  margin-bottom: 40px;
+}
+.model-subtitle {
+  color: rgba(40, 39, 57, 1);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.model-test-drive-form {
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+/* Верхняя часть — инпут и кнопка */
+.model-form {
+  display: flex;
+  gap: 20px;
+}
+.input-phone {
+  flex: 1;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid rgba(234, 235, 237, 1);
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s;
+}
+.input-phone:focus {
+  border-color: rgba(111, 115, 238, 1);
+}
+/* Кнопка */
+.btn-submit {
+  background: rgba(111, 115, 238, 1);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-submit:hover {
+  background: #5a64e0;
+}
+/* Контейнер чекбокса */
+.model-form-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  cursor: pointer;
+}
+/* чекбокс визуально видимый блок */
+.model-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #c9cce1;
+  border-radius: 6px;
+  background-color: #fff;
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+  cursor: pointer;
+  position: relative;
+  margin-top: 6px;
+}
+.model-checkbox:hover {
+  border-color: #5c7cfa;
+}
+/* активное состояние */
+.model-checkbox:checked {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px;
+}
+/* текст справа */
+.checkbox-text {
+  color: rgba(40, 39, 57, 1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+}
+.checkbox-text a {
+  color: rgba(40, 39, 57, 1);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(40, 39, 57, 1);
+}
