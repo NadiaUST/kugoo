@@ -538,6 +538,7 @@ ul {
   position: relative;
   max-width: 1700px;
   margin: auto;
+  margin-bottom: 100px;
 }
 .model-bg {
   position: relative;
@@ -668,4 +669,54 @@ ul {
   color: rgba(40, 39, 57, 1);
   text-decoration: none;
   border-bottom: 1px solid rgba(40, 39, 57, 1);
+}
+
+.subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px; /* расстояние между текстом и формой */
+  background-color: rgba(111, 115, 238, 1);
+  color: white;
+  padding: 14px 0;
+  margin-bottom: 80px;
+}
+.subscribe-text {
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 2px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.subscribe-form input {
+  width: 420px;
+  padding: 25px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white;
+  font-size: 14px;
+}
+.subscribe-form input::placeholder {
+  color: #e0e0e0;
+}
+.subscribe-form button {
+  background-color: white;
+  color: #7579ee;
+  border: none;
+  border-radius: 5px;
+  padding: 25px 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.subscribe-form button:hover {
+  background-color: #f0f0f0;
 }
