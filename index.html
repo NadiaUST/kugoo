@@ -137,7 +137,7 @@
             </div>
           </div>
           <!-- /.hero-list -->
-          <button class="hero-button">Записаться</button>
+          <button class="hero-button" data-toggle="modal">Записаться</button>
         </div>
         <!-- /.hero-content -->
       </div>
@@ -768,6 +768,57 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <div class="modal">
+      <div class="modal-dialog">
+        <div class="modal-descr">
+          <h2 class="modal-title">
+            Запишитесь <br />
+            на тест-драйв электросамоката
+          </h2>
+          <a href="#" class="modal-close" data-toggle="modal">
+            <svg class="close-icon" width="30" height="30">
+              <use href="img/sprite.svg#close"></use>
+            </svg>
+          </a>
+          <p class="modal-subtitle">и подберите модель для себя</p>
+          <p class="modal-text">
+            Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.
+          </p>
+          <p class="modal-subtext">Как с вами удобнее связаться?</p>
+          <form action="#" class="modal-form">
+            <input
+              type="tel"
+              name="phone"
+              placeholder="+7 ( _ _ _ ) _ _  -  _ _  -  _ _"
+              class="input-phone modal-input"
+              required
+            />
+            <button type="submit" class="btn-submit btn-modal">
+              Оформить предзаказ
+            </button>
+          </form>
+          <label class="model-form-consent">
+            <input
+              class="model-checkbox modal-checkbox"
+              type="checkbox"
+              name="consent"
+            />
+            <span class="checkbox-text modal-politic">
+              Нажимая на кнопку, вы соглашаетесь <br />
+              на обработку персональных данных <br />
+              и
+              <a href="#">политикой конфиденциальности</a>
+            </span>
+          </label>
+        </div>
+        <!-- /.modal-descr -->
+        <div class="modal-image">
+          <img src="./img/test-drive.png" alt="Девушка на самокате" />
+        </div>
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
     <script src="js/main.js"></script>
   </body>
 </html>
