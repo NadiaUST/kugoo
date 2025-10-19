@@ -679,7 +679,6 @@ ul {
   background-color: rgba(111, 115, 238, 1);
   color: white;
   padding: 14px 0;
-  margin-bottom: 80px;
 }
 .subscribe-text {
   color: rgba(255, 255, 255, 1);
@@ -724,4 +723,136 @@ ul {
 }
 .subscribe-form button:hover {
   background-color: #f0f0f0;
+}
+.footer {
+  background: rgba(244, 247, 251, 1);
+  padding-top: 47px;
+}
+.footer-wrapper-container {
+  position: relative;
+  padding-bottom: 75px;
+}
+.footer-wrapper-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid rgba(93, 108, 123, 1);
+  opacity: 0.15;
+}
+.footer-menu-title {
+  color: rgba(40, 39, 57, 1);
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 25px;
+}
+.footer-menu-link {
+  color: rgba(93, 108, 123, 1);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 30px;
+}
+.footer-menu-column-2 {
+  columns: 2 auto;
+  column-gap: 60px; /* ← расстояние между колонками */
+}
+.footer-wrapper-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.contacts-title {
+  color: rgba(40, 39, 57, 1);
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 0;
+}
+.contacts-time {
+  color: rgba(93, 108, 123, 1);
+  font-size: 12px;
+  font-weight: 400;
+}
+.contacts-tel {
+  color: rgba(40, 39, 57, 1);
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+.footer-call {
+  color: rgba(111, 115, 238, 1);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+}
+.seporator {
+  border: 1px solid v rgba(93, 108, 123, 1);
+  opacity: 0.15;
+  width: 1110px;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.footer-logo::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid rgba(93, 108, 123, 1);
+  opacity: 0.15;
+}
+.footer-logo-title {
+  color: rgba(40, 39, 57, 1);
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.logo {
+  width: 151px;
+  height: 45px;
+}
+.logo-google {
+  margin-left: -180px;
+}
+.props {
+  padding: 20px 0;
+}
+.props-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.props-politics {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.props-title {
+  color: rgba(93, 108, 123, 1);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.props-chat-title {
+  color: rgba(40, 39, 57, 1);
+  font-size: 14px;
+  font-weight: 400;
+}
+.props-chat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.props-container {
+  display: flex;
+  gap: 60px;
 }
