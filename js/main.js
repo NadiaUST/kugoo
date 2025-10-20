@@ -6,6 +6,7 @@ document.addEventListener("click", (event) => {
   if (
     event.target.dataset.toggle == "modal" ||
     event.target.parentNode.dataset.toggle == "modal" ||
+    event.target.closest(".modal-close") ||
     (!event.composedPath().includes(modalDialog) &&
       modal.classList.contains("is-open"))
   ) {
