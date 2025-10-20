@@ -26,10 +26,14 @@ forms.forEach((form) => {
   const validation = new JustValidate(form, {
     errorFieldCssClass: ".is-invalid",
   });
-  validation.addField("[name=userphone]", [
-    {
-      rule: "required",
-      errorMessage: "Укажите телефон",
-    },
-  ]);
+  validation
+    .addField("[name=userphone]", [
+      {
+        rule: "required",
+        errorMessage: "Укажите телефон",
+      },
+    ])
+    .onSuccess((event) => {
+      console.log(event.target.getAttribute("method"));
+    });
 });
