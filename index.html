@@ -42,6 +42,7 @@
           <div class="nav-phone">
             <a href="tel:+78005055461">+7 (800) 505-54-61</a>
           </div>
+          <!-- /.nav-phone -->
         </nav>
       </div>
       <!-- /.container -->
@@ -542,11 +543,12 @@
               Оставьте заявку, и менеджер подберет нужный самокат
             </p>
             <div class="model-test-drive">
-              <form class="model-test-drive-form">
+              <form action="handler.php" class="model-test-drive-form">
                 <div class="model-form">
                   <input
                     type="tel"
-                    name="phone"
+                    name="userphone"
+                    id="user-phone"
                     placeholder="+7 (___) ___ - __ - __"
                     class="input-phone"
                     required
