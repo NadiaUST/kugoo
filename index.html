@@ -801,17 +801,19 @@
           </p>
           <p class="modal-subtext">Как с вами удобнее связаться?</p>
           <form action="handler.php" method="POST" class="modal-form">
-            <input
-              type="tel"
-              name="userphone"
-              id="user-phone"
-              placeholder="+7 (___) ___ - __ - __"
-              class="input-phone modal-input"
-              maxlength="30"
-            />
-            <button type="submit" class="btn-submit btn-modal">
-              Оформить предзаказ
-            </button>
+            <div class="model-form model-form-phone">
+              <input
+                type="tel"
+                name="userphone"
+                id="user-phone"
+                placeholder="+7 (___) ___ - __ - __"
+                class="input-phone modal-input"
+                maxlength="30"
+              />
+              <button type="submit" class="btn-submit btn-modal">
+                Оформить предзаказ
+              </button>
+            </div>
           </form>
           <label class="model-form-consent">
             <input

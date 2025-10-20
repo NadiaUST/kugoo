@@ -118,6 +118,16 @@ ul {
 input.is-invalid {
   border: 1px solid red;
 }
+.just-validate-error-label {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  display: inline-block;
+}
+.model-form-phone {
+  display: flex;
+  flex-direction: column;
+}
 /* Выпадающее меню */
 .catalog-menu {
   position: absolute;
@@ -595,6 +605,7 @@ input.is-invalid {
 }
 /* Верхняя часть — инпут и кнопка */
 .model-form {
+  position: relative;
   display: flex;
   gap: 20px;
 }
