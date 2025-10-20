@@ -118,11 +118,6 @@ ul {
 input.is-invalid {
   border: 1px solid red;
 }
-.input-validate-error-label {
-  position: absolute;
-  top: -1rem;
-  display: inline-block;
-}
 /* Выпадающее меню */
 .catalog-menu {
   position: absolute;

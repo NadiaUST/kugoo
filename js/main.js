@@ -21,19 +21,24 @@ document.addEventListener("keyup", (event) => {
 });
 
 // валидация для форм
-const forms = document.querySelectorAll("form"); // собираем формы
+const forms = document.querySelectorAll("form");
+
 forms.forEach((form) => {
+  const phoneInput = form.querySelector('[name="userphone"]');
+  if (!phoneInput) return; // пропускаем формы без этого поля
+
   const validation = new JustValidate(form, {
     errorFieldCssClass: ".is-invalid",
   });
-  validation
-    .addField("[name=userphone]", [
-      {
-        rule: "required",
-        errorMessage: "Укажите телефон",
-      },
-    ])
-    .onSuccess((event) => {
-      console.log(event.target.getAttribute("method"));
-    });
+
+  validation.addField('[name="userphone"]', [
+    {
+      rule: "required",
+      errorMessage: "Укажите телефон",
+    },
+  ]);
+
+  validation.onSuccess((event) => {
+    console.log(event.target.getAttribute("method"));
+  });
 });
