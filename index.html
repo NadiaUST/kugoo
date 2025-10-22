@@ -54,20 +54,21 @@
         <div class="navigation-wrapper">
           <a href="#" class="logo">Kugoo</a>
           <div class="catalog-container">
-            <a class="menu-toggle" onclick="toggleMenu()">
-              <div class="menu-line-wrapp">
+            <button class="menu-toggle" id="catalogToggle" type="button">
+              <div class="menu-line-wrapp flex">
                 <div class="menu-line"></div>
                 <div class="menu-line"></div>
                 <div class="menu-line"></div>
               </div>
               <h2 class="menu-toggle-name">Каталог</h2>
-            </a>
-            <!-- список выпадающий при нажатии на кнопку -->
+            </button>
+
+            <!-- Выпадающий список -->
             <div class="catalog-menu" id="catalogMenu">
               <a href="./">Электросамокаты</a>
               <a href="./">Электроскутеры</a>
               <a href="./">Электровелосипеды</a>
-              <a href="./">Электровелосипеды</a>
+              <a href="./">Аксессуары</a>
             </div>
           </div>
           <form class="search-form" action="handler.php" method="POST">

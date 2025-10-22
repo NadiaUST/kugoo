@@ -154,3 +154,18 @@ document.addEventListener("input", (e) => {
     input.value = result;
   }
 });
+
+// каталог
+const toggleBtn = document.getElementById("catalogToggle");
+const catalogMenu = document.getElementById("catalogMenu");
+
+toggleBtn.addEventListener("click", () => {
+  catalogMenu.classList.toggle("active");
+});
+
+// Закрытие меню при клике вне его
+document.addEventListener("click", (e) => {
+  if (!toggleBtn.contains(e.target) && !catalogMenu.contains(e.target)) {
+    catalogMenu.classList.remove("active");
+  }
+});
