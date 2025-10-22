@@ -958,3 +958,19 @@ input.is-invalid {
 .modal-checkbox {
   background-color: #f4f7fb;
 }
+.alert-img {
+  width: 450px;
+  height: 300px;
+  border-radius: 5px;
+}
+.modal-alert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  width: 520px;
+}
+.modal-alert-text {
+  margin-bottom: 0;
+  text-align: center;
+}

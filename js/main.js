@@ -1,22 +1,34 @@
-// Модальное окно
-const modal = document.querySelector(".modal");
-const modalDialog = document.querySelector(".modal-dialog");
+// модальное окно
+let currentModal; // текущее модальное окно
+let modalDialog; // белое диалоговое окно
+let alertModal = document.querySelector("#alert-modal"); // окно с предупреждением
 
-document.addEventListener("click", (event) => {
-  if (
-    event.target.dataset.toggle == "modal" ||
-    event.target.parentNode.dataset.toggle == "modal" ||
-    event.target.closest(".modal-close") ||
-    (!event.composedPath().includes(modalDialog) &&
-      modal.classList.contains("is-open"))
-  ) {
-    event.preventDefault();
-    modal.classList.toggle("is-open");
-  }
+const modalButtons = document.querySelectorAll("[data-toggle=modal]"); // переключатели модальных окно
+modalButtons.forEach((button) => {
+  // клик по переключателю
+  button.addEventListener("click", (event) => {
+    event.preventDefault(); // отменяем поведение при клике, чтобы не перекидывало наверх
+    currentModal = document.querySelector(button.dataset.target);
+    // открываем текущее открытое окно
+    currentModal.classList.toggle("is-open");
+    // назначаем диалоговое окно
+    modalDialog = currentModal.querySelector(".modal-dialog");
+    // отслеживаем клик по окну и пустым областям
+    currentModal.addEventListener("click", (event) => {
+      // если клик в пустую область (не диалог)
+      if (!event.composedPath().includes(modalDialog)) {
+        // то закрываем окно
+        currentModal.classList.remove("is-open");
+      }
+    });
+  });
 });
+// Ловим событие нажатия на кнопки
 document.addEventListener("keyup", (event) => {
-  if (event.key == "Escape" && modal.classList.contains("is-open")) {
-    modal.classList.toggle("is-open");
+  // проверяем что это Escape и текущее окно открыто
+  if (event.key == "Escape" && currentModal.classList.contains("is-open")) {
+    // закрываем текущее окно
+    currentModal.classList.toggle("is-open");
   }
 });
 
@@ -39,6 +51,7 @@ forms.forEach((form) => {
       },
     ])
     // отправка данных на сервер
+    // отправка данных на сервер
     .onSuccess((event) => {
       const thisForm = event.target; // наша форма
       const formData = new FormData(thisForm); // данные из нашей формы
@@ -49,7 +62,18 @@ forms.forEach((form) => {
         }).then((response) => {
           if (response.ok) {
             thisForm.reset();
-            alert("Форма отправлена!");
+            currentModal.classList.remove("is-open");
+            alertModal.classList.add("is-open");
+            currentModal = alertModal;
+            modalDialog = currentModal.querySelector(".modal-dialog");
+            // отслеживаем клик по окну и пустым областям
+            currentModal.addEventListener("click", (event) => {
+              // если клик в пустую область (не диалог)
+              if (!event.composedPath().includes(modalDialog)) {
+                // то закрываем окно
+                currentModal.classList.remove("is-open");
+              }
+            });
           } else {
             // если не прошло, то выходит форма ошибки
             alert("Ошибка. Текс ошибки: ".response.statusText);
