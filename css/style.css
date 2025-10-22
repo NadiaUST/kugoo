@@ -462,7 +462,7 @@ input.is-invalid {
   line-height: 50px;
   text-align: center;
   text-transform: uppercase;
-  width: 732px;
+  max-width: 732px;
   margin: auto;
   margin-bottom: 40px;
 }
@@ -1064,6 +1064,19 @@ input.is-invalid {
     flex-direction: column;
     gap: 0;
   }
+  .test-descr-2 {
+    padding: 70px;
+    left: 0;
+  }
+  .test {
+    margin-bottom: 0;
+  }
+  .card-title {
+    font-size: 32px;
+  }
+  .model-title {
+    font-size: 32px;
+  }
 }
 @media (max-width: 1200px) {
   .hero {
@@ -1099,9 +1112,199 @@ input.is-invalid {
   .logo {
     width: 100px;
   }
+  .footer-logo-title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+  .search-form {
+    width: 35%;
+  }
+  .logo {
+    width: 20%;
+  }
+  .hero {
+    max-width: 800px;
+  }
+  .test {
+    padding: 10px;
+    min-height: 400px;
+  }
+  .safety {
+    min-height: 400px;
+  }
+  .card-list {
+    gap: 0;
+  }
+  .cards {
+    margin-bottom: 0;
+  }
+  .test-descr-2 {
+    position: relative;
+    padding: 0;
+  }
+  .test-title {
+    font-size: 28px;
+  }
+  .model-content {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .model-title {
+    font-size: 24px;
+    text-align: center;
+  }
+  .logo-google {
+    margin-left: 0;
+  }
+  .logo-props {
+    width: 20px;
+  }
+  .footer-menu-column-2 {
+    columns: 1 auto;
+  }
+  .footer-call {
+    font-size: 12px;
+  }
+  .footer-wrapper-container {
+    justify-content: flex-start;
+    gap: 50px;
+  }
 }
 @media (max-width: 768px) {
   .container {
-    max-width: 566px;
+    max-width: 90%;
+  }
+  .hero {
+    max-width: 90%;
+    padding: 30px;
+  }
+  .hero-street {
+    font-size: 10px;
+  }
+  .hero-time {
+    font-size: 8px;
+  }
+  .hero-subtitle {
+    font-size: 14px;
+  }
+  .hero-title {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .hero-list {
+    flex-direction: column;
+  }
+  .card-title {
+    font-size: 22px;
+  }
+  .footer-wrapper-container {
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  .logo-props {
+    width: 15px;
+  }
+  .search-form {
+    display: none;
+  }
+  .nav-link {
+    display: none;
+  }
+  .nav-menu {
+    gap: 0;
+  }
+  .logo {
+    display: none;
+  }
+  .icon-nav {
+    display: none;
+  }
+  .hero-title {
+    font-size: 24px;
+    letter-spacing: 0;
+  }
+  .test {
+    min-height: 200px;
+  }
+  .test-title {
+    font-size: 14px;
+    text-align: center;
+  }
+  .test-subtitle {
+    font-size: 14px;
+  }
+  .text-item {
+    font-size: 14px;
+  }
+  .safety {
+    min-height: 200px;
+  }
+  .card-title {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .model-title {
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 20px;
+  }
+  .model-form {
+    flex-direction: column;
+  }
+  .subscribe-form {
+    flex-direction: column;
+    width: 70%;
+  }
+  .subscribe-form button {
+    width: 100%;
+  }
+  .subscribe-form input {
+    width: 100%;
+  }
+  .subscribe-text {
+    text-align: center;
+    font-size: 14px;
+    width: 70%;
+    letter-spacing: 0;
+  }
+  .props-title {
+    font-size: 10px;
+  }
+  .props-chat-title {
+    font-size: 10px;
+  }
+  .props-logo {
+    display: none;
+  }
+  .footer-menu-title {
+    font-size: 14px;
+  }
+  .footer-menu-link {
+    font-size: 12px;
+  }
+  .contacts-tel {
+    font-size: 12px;
+  }
+  .model-bg {
+    min-height: 200px;
+  }
+  .card-item {
+    max-width: 350px;
+  }
+  .card-image-wrapper {
+    width: 350px;
+  }
+  .hero-list {
+    margin-bottom: 0;
+    gap: 5px;
+  }
+  button:hover {
+    background: inherit;
   }
 }
