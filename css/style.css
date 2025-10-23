@@ -1175,6 +1175,9 @@ input.is-invalid {
     justify-content: flex-start;
     gap: 50px;
   }
+  button:hover {
+    background: inherit;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -1303,8 +1306,5 @@ input.is-invalid {
   .hero-list {
     margin-bottom: 0;
     gap: 5px;
-  }
-  button:hover {
-    background: inherit;
   }
 }

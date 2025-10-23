@@ -47,7 +47,7 @@
         </nav>
       </div>
       <!-- /.container -->
-      <hr class="seporator-header" />
+      <div class="seporator-header"></div>
     </header>
     <!-- /.header -->
     <section class="navigation">
@@ -612,14 +612,20 @@
     </section>
     <!-- /.hero -->
     <section class="subscribe">
-      <p class="subscribe-text">
+      <h2 class="subscribe-text">
         Оставьте свою почту и станьте первым, <br />
         кто получит скидку на новые самокаты
-      </p>
-
+      </h2>
       <div class="subscribe-form">
-        <input type="email" placeholder="Введите Ваш email" required />
-        <button type="submit">Подписаться</button>
+        <form action="send.php" method="POST" class="subscribe_form">
+          <input
+            type="email"
+            placeholder="Введите Ваш email"
+            required
+            name="email"
+          />
+          <button type="submit">Подписаться</button>
+        </form>
       </div>
     </section>
     <!-- /.subscribe -->
@@ -833,7 +839,7 @@
               <input
                 type="tel"
                 name="userphone"
-                id="user-phone"
+                id="user_phone"
                 placeholder="+7 (___) ___ - __ - __"
                 class="input-phone modal-input phone-mask"
                 maxlength="30"
