@@ -34,5 +34,4 @@ Clean structure, modern layout, reusable blocks and fully responsive pages.
 ## 📂 Project Structure
 ## 📸 Preview
 
-### Desktop Version
 ![Main section](screenshots/main-screen.png)
