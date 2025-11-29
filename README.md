@@ -35,3 +35,6 @@ Clean structure, modern layout, reusable blocks and fully responsive pages.
 ## 📸 Preview
 
 ![Main section](screenshots/main-screen.png)
+![Hero](screenshots/scooter-screen.png)
+![Products](screenshots/test-screen.png)
+![Footer](screenshots/footer-screen.png)
