@@ -31,7 +31,6 @@ Clean structure, modern layout, reusable blocks and fully responsive pages.
 - Creating a branded feel through colors and UI accents  
 - Optimizing images and file structure  
 
-## 📂 Project Structure
 ## 📸 Preview
 
 ![Main section](screenshots/main-screen.png)
