@@ -17,23 +17,25 @@ Clean structure, modern UI, reusable blocks, and fully responsive pages.
 
 ## 🚀 Features
 
-- Multi-page website with a clean, scalable structure  
-- Modern and stylish UI with accent branding  
+- Multi-page responsive landing  
+- Modern UI with clean typography and accent branding  
 - Fully responsive (mobile, tablet, desktop)  
-- Product sections, catalog, features and brand info  
-- Interactive elements built with JavaScript  
-- Reusable header and footer components  
-- Clean and organized asset structure (`css`, `js`, `img`, `fonts`)  
+- JavaScript-based interactivity  
+- Working email form using PHPMailer (PHP)  
+- Organized asset structure (`css`, `js`, `img`, `phpmailer`)  
+- Thank-you page after successful form submission  
+- .htaccess routing and server-friendly structure  
 
 ---
 
 ## 🛠 Tech Stack
 
 - **HTML5**  
-- **CSS3 (flexbox, grid, adaptive layout)**  
+- **CSS3 (flexbox, grid, responsive)**  
 - **JavaScript (Vanilla)**  
-- **Responsive design principles**  
-- **BEM / semantic layout**
+- **PHP + PHPMailer**  
+- **BEM methodology**  
+- **Semantic layout**
 
 ---
 
@@ -41,34 +43,23 @@ Clean structure, modern UI, reusable blocks, and fully responsive pages.
 
 ```
 .
-├── .osp/                     # System/service folder (ignored in build)
+├── .osp/                     # System/service folder
 │
 ├── css/                     # Stylesheets
-├── fonts/                   # Custom fonts
 ├── img/                     # Images and media
 ├── js/                      # JavaScript files
 │
-├── template-parts/          # Reusable template components
-│   ├── header-page.php
-│   ├── footer.php
-│   └── ... (other template fragments)
+├── phpmailer/               # PHPMailer library for email sending
+├── screenshots/             # Screenshots used in README
 │
 ├── .htaccess                # Server configuration
-├── 404.php                  # Custom 404 page
+├── favicon.ico              # Site icon
 │
-├── about.php                # About the company
-├── autohim.php              # Autochemistry page
-├── blog.php                 # Blog / News page
-├── contact.php              # Contact page
-├── contracts.php            # Contracts page
-├── index.php                # Main page
-├── more.php                 # Additional page
-├── politics.php             # Privacy policy / politics
-├── tech.php                 # Technology page
-├── trademarks.php           # Trademarks page
+├── index.html               # Main landing page
+├── thanksyou.html           # Thank-you page (after form submission)
 │
-├── handler.php              # Contact form handler (PHP)
-├── favicon.ico              # Site favicon
+├── handler.php              # Form handler (old)
+├── send.php                 # Main form processing script
 │
 └── README.md                # Documentation
 ```
@@ -77,11 +68,12 @@ Clean structure, modern UI, reusable blocks, and fully responsive pages.
 
 - Pixel-perfect layout from design
 - Clean and readable CSS structure
-- Fast layout without heavy libraries
-- Proper spacing, typography, and visual hierarchy
-- Creating a branded feel through colors and UI accents=
-- Optimizing images and file structure
-- Building scalable components for reuse
+- Responsive UI for all screen sizes
+- Creating branded, stylish UI through colors and spacing
+- JavaScript interactivity without heavy libraries
+- Implementing PHP email form with PHPMailer
+- Optimizing images and file organization
+- Building scalable and reusable components
 
 📩 Contact
 
