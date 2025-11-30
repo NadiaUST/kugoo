@@ -41,16 +41,36 @@ Clean structure, modern UI, reusable blocks, and fully responsive pages.
 
 ```
 .
-├── index.html
-├── catalog.html
-├── product.html
+├── .osp/                     # System/service folder (ignored in build)
 │
-├── css/
-├── js/
-├── img/
-├── fonts/
+├── css/                     # Stylesheets
+├── fonts/                   # Custom fonts
+├── img/                     # Images and media
+├── js/                      # JavaScript files
 │
-└── README.md
+├── template-parts/          # Reusable template components
+│   ├── header-page.php
+│   ├── footer.php
+│   └── ... (other template fragments)
+│
+├── .htaccess                # Server configuration
+├── 404.php                  # Custom 404 page
+│
+├── about.php                # About the company
+├── autohim.php              # Autochemistry page
+├── blog.php                 # Blog / News page
+├── contact.php              # Contact page
+├── contracts.php            # Contracts page
+├── index.php                # Main page
+├── more.php                 # Additional page
+├── politics.php             # Privacy policy / politics
+├── tech.php                 # Technology page
+├── trademarks.php           # Trademarks page
+│
+├── handler.php              # Contact form handler (PHP)
+├── favicon.ico              # Site favicon
+│
+└── README.md                # Documentation
 ```
 
 🎯 What I Focused On
