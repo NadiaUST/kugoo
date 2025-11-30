@@ -39,33 +39,29 @@ Clean structure, modern UI, reusable blocks, and fully responsive pages.
 
 ## 📁 Project Structure
 
+```
 .
-├── index.html # Main landing page
-├── catalog.html # Product catalog
-├── product.html # Product card (if included)
+├── index.html
+├── catalog.html
+├── product.html
 │
-├── css/ # Styles
-├── js/ # Scripts
-├── img/ # Images
-├── fonts/ # Fonts
+├── css/
+├── js/
+├── img/
+├── fonts/
 │
 └── README.md
+```
 
 🎯 What I Focused On
 
-Pixel-perfect layout from design
-
-Clean and readable CSS structure
-
-Fast layout without heavy libraries
-
-Proper spacing, typography, and visual hierarchy
-
-Creating a branded feel through colors and UI accents
-
-Optimizing images and file structure
-
-Building scalable components for reuse
+- Pixel-perfect layout from design
+- Clean and readable CSS structure
+- Fast layout without heavy libraries
+- Proper spacing, typography, and visual hierarchy
+- Creating a branded feel through colors and UI accents=
+- Optimizing images and file structure
+- Building scalable components for reuse
 
 📩 Contact
 
